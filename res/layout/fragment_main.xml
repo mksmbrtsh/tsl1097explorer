@@ -4,18 +4,31 @@
     android:layout_height="match_parent"
     tools:context="maximsblog.blogspot.com.tsl1097explorer.MainActivity$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
     <ToggleButton
         android:id="@+id/toggleButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
         android:text="ToggleButton" />
+
+    <CheckBox
+        android:id="@+id/sleep_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton1"
+        android:layout_alignBottom="@+id/toggleButton1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/toggleButton1"
+        android:text="@string/sleep_with_screen" />
+
+    <ListView
+        android:id="@+id/log_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggleButton1" >
+
+    </ListView>
 
 </RelativeLayout>

@@ -231,6 +231,8 @@ public class BluetoothService {
                     socket = mmServerSocket.accept();
                 } catch (IOException e) {
                     break;
+                } catch (NullPointerException e){
+                	break;
                 }
 
                 // If a connection was accepted
@@ -261,6 +263,7 @@ public class BluetoothService {
                 mmServerSocket.close();
                 mmServerSocket = null;
             } catch (IOException e) { }
+            catch (NullPointerException e){ }
         }
 
         public void kill() {
