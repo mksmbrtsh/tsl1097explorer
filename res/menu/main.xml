@@ -3,9 +3,17 @@
     tools:context="maximsblog.blogspot.com.tsl1097explorer.MainActivity" >
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:id="@+id/tagtype"
+        android:checkable="true"
+        android:checked="false"
+        android:orderInCategory="0"
+        android:title="@string/barcode">
+    </item>
+    <item
+        android:id="@+id/sleep_with_screen"
+        android:checkable="true"
+        android:orderInCategory="1"
+        android:title="@string/sleep_with_screen">
+    </item>
 
 </menu>

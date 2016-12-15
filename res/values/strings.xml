@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TSL1097explorer</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">TSL 1097 Explorer</string>
 	<string name="scan_for_device">Scan for devices</string>
-	<string name="sleep_with_screen">Отключать с экраном</string>
+	<string name="sleep_with_screen">Sleep with screen</string>
+	<string name="barcode">Barcode</string>
+	<string name="rfid">RFID</string>
+	<string name="battery_status">Battery\nstatus</string>
+	<string name="version_info">Version\ninfo</string>
+	<string name="disconnect">Disconnect</string>
+	<string name="connect">Connect</string>
+	<string name="button_hold">Device is busy!\nauto_clear_listauto_clear_listMay be device button is hold! Please release this button, and try again</string>
+	<string name="about_text">Demo application for read rfid tags and barcodes\nvia TSL 1097 bluetooth-reader.\nSend me a letter to mksmbtrsh@gmail.com\nor\nhttps://github.com/mksmbrtsh/tsl1097explorer\n2016 Maksim Bartosh</string>
+ 
 </resources>

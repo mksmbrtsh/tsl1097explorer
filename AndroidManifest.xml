@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
             <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
-            <service android:name="ServiceBluetooth"></service>
+            <service android:name="Service1097Bluetooth"></service>
     </application>
 
 </manifest>

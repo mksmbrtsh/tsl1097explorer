@@ -23,13 +23,14 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mIntentFilter = new IntentFilter();
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.connect.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.status.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.connectFailed.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.dataDataReceived.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.disconnect.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.enableBluetooth.toString());
-		mIntentFilter.addAction(ServiceBluetooth.IntentDo.requestConnectDevice.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.connect.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.status.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.connectFailed.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.dataDataReceived.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.disconnect.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.enableBluetooth.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.requestConnectDevice.toString());
+		mIntentFilter.addAction(Service1097Bluetooth.IntentDo.buttonHold.toString());
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
@@ -59,26 +60,4 @@ public class MainActivity extends Activity {
 			}
 		}
 	};
-	
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-
-	
 }

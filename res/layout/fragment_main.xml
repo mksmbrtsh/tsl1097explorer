@@ -4,31 +4,57 @@
     android:layout_height="match_parent"
     tools:context="maximsblog.blogspot.com.tsl1097explorer.MainActivity$PlaceholderFragment" >
 
-    <ToggleButton
-        android:id="@+id/toggleButton1"
+    <View
+        android:id="@+id/div"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:text="ToggleButton" />
-
-    <CheckBox
-        android:id="@+id/sleep_checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/toggleButton1"
-        android:layout_alignBottom="@+id/toggleButton1"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/toggleButton1"
-        android:text="@string/sleep_with_screen" />
+        android:layout_height="1dp"
+        android:layout_below="@+id/toggleButton1"
+        android:background="#66666666" />
 
     <ListView
         android:id="@+id/log_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/div2"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/toggleButton1" >
+        android:layout_below="@+id/div" >
 
     </ListView>
+
+    <Switch
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textOff="Disconnect"
+        android:textOn="Connect" />
+
+    <Button
+        android:id="@+id/battery_status"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/log_listView"
+        android:layout_alignParentRight="true"
+        android:text="@string/battery_status" />
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#66666666"
+        android:layout_above="@+id/about_text" />
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="TextView" />
 
 </RelativeLayout>
